@@ -8,7 +8,7 @@ OUT = CDS
 CLEANEXT = o a
 BITVRS=64
 DBGFLAG=
-SRC=main.c
+SRC=main.cpp CDS.cpp startup.cpp profile.cpp config.cpp
 
 ifeq ($(shell uname), Linux)
 	FixPath = $1
