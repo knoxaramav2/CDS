@@ -1,0 +1,78 @@
+<!--Javascript example
+Document styling follows the below scheme
+
+//*
+title: "a1"
+args: 	[i $type=number $desc="A summary of the argument"] 
+		[j $type=NA $desc="Info will be read to the current header
+			until a new header is declared"]
+desc: "
+	This is a description of a function. 
+	Descriptions can be multiline. Ending and starting newlines
+	are trimmed if empty.
+	
+	You can split a line without\
+	adding a newline is the output by placing a '\\' character at
+	the end, unescaped"
+*/
+return: Returns a value of type %number, where %number is color coded upon output
+	$type=number
+function a1(i, j){...}
+
+-->
+
+<!-- Powershell example
+
+<##
+title: "test script"
+desc: "Format otherwise stays the same
+	Look below for an example on importing"
+
+#>
+
+-->
+
+<profile>
+	<!--Link to target style sheet. Multiple may be declared, loaded in given order-->
+	<styles>
+		<style>stdStyle.css</style>
+	</styles>
+
+	<langauges>
+		<language>	C		</language>
+		<language>	Cpp		</language>
+		<language>	Java	</language>
+		<language>	C#		</language>
+		<language>	Python	</language>
+	</langauges>
+	
+	<!--Will be applied to all profiles unless <Override/> tag added to property-->
+	<Default>
+		<SingleComment>
+			<start> "///" </start>
+		<SingleComment>
+		<BlockComment>
+			<start> "/**" </start>
+			<end> "*/" </start>
+		</BlockComment>
+	</Default>
+	
+	<C>
+		<dependency>
+			<verb>"#include"</verb>
+			<closures>
+				<closure>
+					<start> "<" </start>
+					<end> ">" </end>
+				</closure>
+				<closure>
+					<start> "\"" </start>
+					<end> "\"" </end>
+				</closure>
+			</closures>
+		</dependency>
+	</C>
+	
+	
+
+</profile>

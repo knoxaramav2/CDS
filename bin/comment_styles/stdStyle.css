@@ -1,0 +1,87 @@
+/*Color palette*/
+h1{
+    color: orange;
+}
+
+h2, h3{
+    color: white;
+}
+
+.bg{
+    background-color: #2E2E2E;
+}
+
+.link{
+    color: #3c82bf;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+/*Common structures*/
+
+.box{
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 5px;
+}
+
+/*Specific regions*/
+.container{
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+#header{
+    margin: 0;
+}
+
+#header h2{
+    margin-left: 10px;
+}
+
+#sidebar{
+    width: 15%;
+    
+    height: auto;
+    padding: 15px;
+    vertical-align: middle;
+
+    display: table-cell;
+}
+
+.sidebar_link{
+    text-decoration: none;
+    margin: 2px;
+    display: block;
+}
+
+#viewer{
+    margin-left: 5px;
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+
+#title{
+    text-align: center;
+}
+
+#footer{
+    min-height: 20px;
+}
+
+.api_entry{
+    margin: 5px;
+}
+
+.api_entry h3{
+    font-weight: bolder;
+}
+
+.info_view{
+    background: #CCCCCC;
+    min-height: 50px;
+    
+}

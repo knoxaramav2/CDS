@@ -3,6 +3,7 @@
 
 #include "config.hpp"
 #include "profile.hpp"
+#include "manifest.hpp"
 
 //general info aggregate
 class CDS {
@@ -11,6 +12,7 @@ public:
 
     Config progConfig;
     Profile emProfile;
+    Manifest manifest;
 
     CDS();
 };
