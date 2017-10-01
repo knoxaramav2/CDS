@@ -1,0 +1,9 @@
+<profile
+    name="default_style"
+    imports="basic_structure.xml"
+    inherits="format"
+    >
+
+
+
+</profile>

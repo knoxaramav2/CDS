@@ -32,11 +32,11 @@ desc: "Format otherwise stays the same
 
 -->
 
-<profile>
+<profile 
+	name = "c_style"
+	type = "pattern"
+	>
 	<!--Link to target style sheet. Multiple may be declared, loaded in given order-->
-	<styles>
-		<style>stdStyle.css</style>
-	</styles>
 
 	<langauges>
 		<language>	C		</language>

@@ -1,0 +1,84 @@
+<!--
+Defines layout structure and common elements and fields
+These may be overridden in inheriting files
+
+Container definitions and attributes used to generate css
+
+
+
+basic definitions:
+
+element: (primitive)
+    Common attributes across ALL items
+
+    Attributes:
+    name:
+        specify name identifier
+    palette_indx:
+        specify index of current color palette to use for this element
+
+container: (element)
+    An element container which may hold other elements
+
+    Attributes:
+    width:
+        translate to css width
+    height:
+        translate to css height
+    align:
+        relative position to siblings, in order of declaration
+    contents:
+        list of children. Children are processed in order of declaration
+
+
+field: (container)
+    A container (rendered to div) that wraps elements together
+
+    Attributes:
+
+list: (container)
+    A container in which child elements become blocks and stack
+
+label: (element)
+    Simply represents a line of text. Blocked, this occupies entire line within parent.
+
+    Attributes:
+    
+link: (element)
+    Allows for linking to pages or page places
+
+    Attributes:
+    decorated:
+        True/False for has/does not have underline present
+
+
+-->
+
+<!--Basic definitions-->
+<profile 
+    name="basic"
+    inherit=""
+    type="format">
+
+    <styles>
+		<style>stdStyle.css</style>
+	</styles>
+
+    <field
+        name="header"
+        width="width"
+        height="auto"/>
+
+    <field
+        name="sidebar"
+        width="15%"
+        height="auto"
+        align="left">
+    </field>
+
+    <list name="region">
+        <label name="title"/>
+        <list name="contents"/>
+    </list>
+
+</profile>
